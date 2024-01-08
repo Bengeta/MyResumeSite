@@ -13,7 +13,7 @@ export default class Header extends Component {
     render() {
         return (
             <>
-                <Navbar collapseOnSelect expand="lg" variant="dark" bg="dark">
+                <Navbar collapseOnSelect expand="md" variant="dark" bg="dark">
                     <Container>
                         <Navbar.Brand href="/">
                             <img
@@ -42,9 +42,9 @@ export default class Header extends Component {
 
                 <Router>
                     <Routes>
-                        <Route exact path="/" element={Home} />
-                        <Route exact path="/resume" element={Resume} />
-                        <Route exact path="/contact" element={Contact} />
+                        <Route exact path="/" element={<Home/>} />
+                        <Route exact path="/resume" element={<Resume/>} />
+                        <Route exact path="/contact" element={<Contact/>} />
                     </Routes>
                 </Router>
             </>
